@@ -63,6 +63,7 @@ export default {
       try {
         const response = await httpClient.get(`/users/${id.value}`)
         userDetails.value = response.data
+        console.log("Response",response)
         if (response.status === 200) {
           showToast(
             'User data loaded successfully!',
@@ -71,6 +72,13 @@ export default {
             '#4CAF50',
           )
           notificationShown.value = true
+        }else{
+          showToast(
+            'Failed to load user data',
+            3000,
+            // 'linear-gradient(to right, #ff4b1f, #ff9068)',
+            '#FF6347',
+          )
         }
       } catch (error) {
         console.error(error)
