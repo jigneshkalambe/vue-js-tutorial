@@ -1,0 +1,26 @@
+* {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./fonts/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./fonts/JetBrainsMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-size: normal;
+}
+
+.toast-notification {
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
